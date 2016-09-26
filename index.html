@@ -8,6 +8,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="css/screen.css" rel="stylesheet">
+    <link href="css/forms.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script>
+    <script src="js/jquery.matchHeight.js"></script>
 </head>
 <body>
     <section id="main" class="vertical-container">
@@ -20,7 +26,102 @@
             <h2>Projects</h2>
         </div>
         <div class="projects-wrapper">
-            <!-- projects will go here -->
+            <div class="row">
+                <div class="thumb-wrapper">
+                    <div class="outer-thumb">
+                        <img id="img-1" class="projects-thumb" src="images/coffee.png" alt="Coffee Site">
+                    </div>
+                    <div class="hover-thumb">
+                        <h3 class="thumb-header">Coffee Site</h3>
+                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/coffee2-angular" class="projects button">GitHub</a><a href="http://kdavidmoore.com/coffee" class="projects button">Demo</a></p>
+                        <p class="info-text">An eCommerce app built using AngularJS, Node.js/Express, and MongoDB.</p>
+                    </div>
+                </div>
+                <div class="thumb-wrapper">
+                    <div class="outer-thumb">
+                        <img id="img-2" class="projects-thumb" src="images/ag.png" alt="Ag Labs">
+                    </div>
+                    <div class="hover-thumb">
+                        <h3 class="thumb-header">Ag Labs</h3>
+                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/final-project" class="projects button">GitHub</a><a href="http://ag.kdavidmoore.com" class="projects button">Demo</a></p>
+                        <p class="info-text">An eCommerce app built using AngularUI Router, Node.js/Express, and MySQL.</p>
+                    </div>
+                </div>
+                <div class="thumb-wrapper">
+                    <div class="outer-thumb">
+                        <img id="img-7" class="projects-thumb" src="images/yikyak.png" alt="Rock Talk">
+                    </div>
+                    <div class="hover-thumb">
+                        <h3 class="thumb-header">Rock Talk</h3>
+                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/yikyak-clone" class="projects button">GitHub</a><a href="http://rocks.kdavidmoore.com" class="projects button">Demo</a></p>
+                        <p class="info-text">Social media app built using PHP, MySQL, and MeekroDB.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="thumb-wrapper">
+                    <div class="outer-thumb">
+                        <img id="img-3" class="projects-thumb" src="images/react-movies.png" alt="Movie Crawler">
+                    </div>
+                    <div class="hover-thumb">
+                        <h3 class="thumb-header">React Movie App</h3>
+                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/react-movie-app" class="projects button">GitHub</a><a href="http://movies.kdavidmoore.com" class="projects button">Demo</a></p>
+                        <p class="info-text">Uses React.js to display "Now Playing" movie information from themoviedb.org API.</p>
+                    </div>
+                </div>
+                <div class="thumb-wrapper">
+                    <div class="outer-thumb">
+                        <img id="img-5" class="projects-thumb" src="images/chat.png" alt="Node Chat">
+                    </div>
+                    <div class="hover-thumb">
+                        <h3 class="thumb-header">Node Chat</h3>
+                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/node-chat" class="projects button">GitHub</a><a href="https://shielded-fortress-12118.herokuapp.com/" class="projects button">Demo</a></p>
+                        <p class="info-text">Send and recieve messages from multiple chat clients using Node.js and socket.io.</p>
+                    </div>
+                </div>
+                <div class="thumb-wrapper">
+                    <div class="outer-thumb">
+                        <img id="img-6" class="projects-thumb" src="images/tweets.png" alt="Panama Papers Tweets">
+                    </div>
+                    <div class="hover-thumb">
+                        <h3 class="thumb-header">Panama Papers Tweets</h3>
+                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/panama-papers-tweets" class="projects button">GitHub</a><a href="http://kdavidmoore.com/panama-papers" class="projects button">Demo</a></p>
+                        <p class="info-text">Pulls data from Twitter API and filters results using AngularJS.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="thumb-wrapper">
+                    <div class="outer-thumb">
+                        <img id="img-4" class="projects-thumb" src="images/langs.png" alt="Interactive Map">
+                    </div>
+                    <div class="hover-thumb">
+                        <h3 class="thumb-header">Interactive Map</h3>
+                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/backTableBankers" class="projects button">GitHub</a><a href="http://kdavidmoore.com/languages" class="projects button">Demo</a></p>
+                        <p class="info-text">Uses AngularJS and DataMaps.js to apply and graphically display up to three data filters.</p>
+                    </div>
+                </div>
+                <div class="thumb-wrapper">
+                    <div class="outer-thumb">
+                        <img id="img-8" class="projects-thumb" src="images/calc.png" alt="JS Calculator">
+                    </div>
+                    <div class="hover-thumb">
+                        <h3 class="thumb-header">JS Calculator</h3>
+                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/js-calculator" class="projects button">GitHub</a><a href="http://kdavidmoore.com/calculator" class="projects button">Demo</a></p>
+                        <p class="info-text">Performs and displays simple calculations using HTML, CSS, jQuery, and JavaScript</p>
+                    </div>
+                </div>
+                <div class="thumb-wrapper">
+                    <div class="outer-thumb">
+                        <img id="img-8" class="projects-thumb" src="images/places.png" alt="Search Places">
+                    </div>
+                    <div class="hover-thumb">
+                        <h3 class="thumb-header">Search Places</h3>
+                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/us-cities-angular" class="projects button">GitHub</a><a href="http://kdavidmoore.com/search-places" class="projects button">Demo</a></p>
+                        <p class="info-text">Search for places and display directions using AngularJS and Google Maps JavaScript API.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="contact">
@@ -45,5 +146,7 @@
             <a href="#main">top</a>
         </div>
     </section>
+
+    <script src="js/initPage.js"></script>
 </body>
 </html>
