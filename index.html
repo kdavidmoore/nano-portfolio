@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Keith Moore, Software Engineer</title>
@@ -7,8 +7,8 @@
     <meta name="author" content="Keith Moore">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="css/screen.css" rel="stylesheet">
     <link href="css/forms.css" rel="stylesheet">
+    <link href="css/screen.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
@@ -17,13 +17,15 @@
 </head>
 <body>
     <section id="main" class="vertical-container">
-        <a href="#projects"><h1>Keith Moore, Software Engineer</h1></a>
+        <div class="headline-wrapper">
+            <a href="#projects"><h1 class="headline">Keith Moore, Software Engineer</h1></a>
+        </div>
         <a href="#projects" class="main-projects-link">Projects</a>
         <a href="#contact" class="main-contact-link">Contact</a>
     </section>
     <section id="projects">
         <div class="header-wrapper">
-            <h2>Projects</h2>
+            <h2 class="section-header">Projects</h2>
         </div>
         <div class="projects-wrapper">
             <div class="row">
@@ -33,7 +35,7 @@
                     </div>
                     <div class="hover-thumb">
                         <h3 class="thumb-header">Coffee Site</h3>
-                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/coffee2-angular" class="projects button">GitHub</a><a href="http://kdavidmoore.com/coffee" class="projects button">Demo</a></p>
+                        <p class="projects-button-wrapper"><a href="https://github.com/kdavidmoore/coffee2-angular" class="projects button">GitHub</a><a href="http://kdavidmoore.com/coffee" class="projects button">Demo</a></p>
                         <p class="info-text">An eCommerce app built using AngularJS, Node.js/Express, and MongoDB.</p>
                     </div>
                 </div>
@@ -43,7 +45,7 @@
                     </div>
                     <div class="hover-thumb">
                         <h3 class="thumb-header">Ag Labs</h3>
-                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/final-project" class="projects button">GitHub</a><a href="http://ag.kdavidmoore.com" class="projects button">Demo</a></p>
+                        <p class="projects-button-wrapper"><a href="https://github.com/kdavidmoore/final-project" class="projects button">GitHub</a><a href="http://ag.kdavidmoore.com" class="projects button">Demo</a></p>
                         <p class="info-text">An eCommerce app built using AngularUI Router, Node.js/Express, and MySQL.</p>
                     </div>
                 </div>
@@ -53,7 +55,7 @@
                     </div>
                     <div class="hover-thumb">
                         <h3 class="thumb-header">Rock Talk</h3>
-                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/yikyak-clone" class="projects button">GitHub</a><a href="http://rocks.kdavidmoore.com" class="projects button">Demo</a></p>
+                        <p class="projects-button-wrapper"><a href="https://github.com/kdavidmoore/yikyak-clone" class="projects button">GitHub</a><a href="http://rocks.kdavidmoore.com" class="projects button">Demo</a></p>
                         <p class="info-text">Social media app built using PHP, MySQL, and MeekroDB.</p>
                     </div>
                 </div>
@@ -65,7 +67,7 @@
                     </div>
                     <div class="hover-thumb">
                         <h3 class="thumb-header">React Movie App</h3>
-                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/react-movie-app" class="projects button">GitHub</a><a href="http://movies.kdavidmoore.com" class="projects button">Demo</a></p>
+                        <p class="projects-button-wrapper"><a href="https://github.com/kdavidmoore/react-movie-app" class="projects button">GitHub</a><a href="http://movies.kdavidmoore.com" class="projects button">Demo</a></p>
                         <p class="info-text">Uses React.js to display "Now Playing" movie information from themoviedb.org API.</p>
                     </div>
                 </div>
@@ -75,7 +77,7 @@
                     </div>
                     <div class="hover-thumb">
                         <h3 class="thumb-header">Node Chat</h3>
-                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/node-chat" class="projects button">GitHub</a><a href="https://shielded-fortress-12118.herokuapp.com/" class="projects button">Demo</a></p>
+                        <p class="projects-button-wrapper"><a href="https://github.com/kdavidmoore/node-chat" class="projects button">GitHub</a><a href="https://shielded-fortress-12118.herokuapp.com/" class="projects button">Demo</a></p>
                         <p class="info-text">Send and recieve messages from multiple chat clients using Node.js and socket.io.</p>
                     </div>
                 </div>
@@ -85,7 +87,7 @@
                     </div>
                     <div class="hover-thumb">
                         <h3 class="thumb-header">Panama Papers Tweets</h3>
-                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/panama-papers-tweets" class="projects button">GitHub</a><a href="http://kdavidmoore.com/panama-papers" class="projects button">Demo</a></p>
+                        <p class="projects-button-wrapper"><a href="https://github.com/kdavidmoore/panama-papers-tweets" class="projects button">GitHub</a><a href="http://kdavidmoore.com/panama-papers" class="projects button">Demo</a></p>
                         <p class="info-text">Pulls data from Twitter API and filters results using AngularJS.</p>
                     </div>
                 </div>
@@ -97,7 +99,7 @@
                     </div>
                     <div class="hover-thumb">
                         <h3 class="thumb-header">Interactive Map</h3>
-                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/backTableBankers" class="projects button">GitHub</a><a href="http://kdavidmoore.com/languages" class="projects button">Demo</a></p>
+                        <p class="projects-button-wrapper"><a href="https://github.com/kdavidmoore/backTableBankers" class="projects button">GitHub</a><a href="http://kdavidmoore.com/languages" class="projects button">Demo</a></p>
                         <p class="info-text">Uses AngularJS and DataMaps.js to apply and graphically display up to three data filters.</p>
                     </div>
                 </div>
@@ -107,7 +109,7 @@
                     </div>
                     <div class="hover-thumb">
                         <h3 class="thumb-header">JS Calculator</h3>
-                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/js-calculator" class="projects button">GitHub</a><a href="http://kdavidmoore.com/calculator" class="projects button">Demo</a></p>
+                        <p class="projects-button-wrapper"><a href="https://github.com/kdavidmoore/js-calculator" class="projects button">GitHub</a><a href="http://kdavidmoore.com/calculator" class="projects button">Demo</a></p>
                         <p class="info-text">Performs and displays simple calculations using HTML, CSS, jQuery, and JavaScript</p>
                     </div>
                 </div>
@@ -117,7 +119,7 @@
                     </div>
                     <div class="hover-thumb">
                         <h3 class="thumb-header">Search Places</h3>
-                        <p class="projects-buttons"><a href="https://github.com/kdavidmoore/us-cities-angular" class="projects button">GitHub</a><a href="http://kdavidmoore.com/search-places" class="projects button">Demo</a></p>
+                        <p class="projects-button-wrapper"><a href="https://github.com/kdavidmoore/us-cities-angular" class="projects button">GitHub</a><a href="http://kdavidmoore.com/search-places" class="projects button">Demo</a></p>
                         <p class="info-text">Search for places and display directions using AngularJS and Google Maps JavaScript API.</p>
                     </div>
                 </div>
@@ -126,7 +128,7 @@
     </section>
     <section id="contact">
         <div class="header-wrapper">
-            <h2>Contact</h2>
+            <h2 class="section-header">Contact</h2>
         </div>
         <div class="contact-links-wrapper">
             <div class="contact-link">

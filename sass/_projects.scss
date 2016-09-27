@@ -8,97 +8,104 @@
 
 .projects-wrapper {
   padding: 20px;
+}
 
-  .row:before, .row:after {
-    content: "";
-    display: table;
-    clear: both;
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.thumb-wrapper {
+  border: 1px solid #3B4A4D;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 999.9px) {
+    display: block;
+    width: 100%;
   }
 
-  .thumb-wrapper {
-    border: 1px solid #3B4A4D;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-    width: 33%;
+  @media screen and (min-width: 1000px) {
     display: inline-block;
+    width: 33%;
+  }
+}
 
-    .outer-thumb {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-    }
+.outer-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 
-    .projects-thumb {
-      width: 100%;
-    }
+.projects-thumb {
+  width: 100%;
+}
 
-    .hover-thumb {
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      text-align: center;
-    }
+.hover-thumb {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
 
-    .projects-buttons {
-      padding: 5px 0px;
-    }
+.projects-button-wrapper {
+  padding: 5px 0px;
+}
 
-    .projects.button {
-      color: $white;
-      margin: 0px 5px;
-    }
+.projects.button {
+  color: $white;
+  margin: 0px 5px;
+}
 
-    .thumb-header {
-      font-size: 1.5em;
-      margin: 10px 0px 0px 0px;
-      color: white;
-    }
+.thumb-header {
+  margin: 10px 0px 0px 0px;
+  color: white;
+}
 
-    .info-text {
-      color: $white;
-      padding: 10px;
-    }
+.info-text {
+  color: $white;
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 499.9px) {
+  .thumb-header {
+    font-size: 1.7em;
+  }
+  
+  .info-text {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 899.9px) {
+  .thumb-header {
+    font-size: 3em;
+  }
+  
+  .info-text {
+    font-size: 2em;
   }
 
-  @media screen and (max-width: 415px) {
-    .thumb-wrapper {
-      display: block;
-      width: 100%;
+  .projects.projects-button-wrapper {
+    padding: 10px;
+  }
+}
 
-      .thumb-header {
-        font-size: 2.2rem;
-      }
-      
-      .info-text {
-        font-size: 1.3rem;
-      }
-    }
+@media screen and (min-width: 900px) {
+  .thumb-header {
+    font-size: 1.7em;
   }
 
-  @media screen and (min-width: 416px) and (max-width: 951px) {
-    .thumb-wrapper {
-      display: block;
-      width: 100%;
-
-      .thumb-header {
-        font-size: 4.0rem;
-      }
-
-      .info-text {
-        font-size: 2.5rem;
-      }
-
-      .projects.button {
-        font-size: 2.0rem;
-        color: $white;
-      }
-    }
+  .info-text {
+    font-size: 1.3em;
   }
 }
