@@ -29,45 +29,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body { font-family: 'Raleway', sans-serif; }
 
 /* line 5, ../sass/_main.scss */
-a { color: white; text-decoration: none; }
+a, a:visited { color: white; text-decoration: none; }
 
 /* line 10, ../sass/_main.scss */
-a:visited { color: white; text-decoration: none; }
-
-/* line 15, ../sass/_main.scss */
 a:hover { color: #c8c8c8; text-decoration: none; }
 
-/* line 20, ../sass/_main.scss */
+/* line 15, ../sass/_main.scss */
 #main { max-width: 100vw; height: 100vh; margin: 0 auto; text-align: center; background-color: black; color: white; }
 
-/* line 29, ../sass/_main.scss */
+/* line 24, ../sass/_main.scss */
 .vertical-container { display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; }
 
-/* line 38, ../sass/_main.scss */
+/* line 33, ../sass/_main.scss */
 .main-projects-link { position: absolute; bottom: 20px; left: 20px; }
 
-/* line 44, ../sass/_main.scss */
+/* line 39, ../sass/_main.scss */
 .main-contact-link { position: absolute; bottom: 20px; right: 20px; }
 
-@media screen and (max-width: 499.9px) { /* line 51, ../sass/_main.scss */
+@media screen and (max-width: 499.9px) { /* line 46, ../sass/_main.scss */
   .headline { font-size: 2.5em; }
-  /* line 55, ../sass/_main.scss */
+  /* line 50, ../sass/_main.scss */
   .headline-wrapper { padding: 20px; }
-  /* line 59, ../sass/_main.scss */
+  /* line 54, ../sass/_main.scss */
   .section-header { font-size: 2em; }
-  /* line 63, ../sass/_main.scss */
+  /* line 58, ../sass/_main.scss */
   .main-contact-link, .main-projects-link { font-size: 1.5em; } }
-@media screen and (min-width: 500px) and (max-width: 899.9px) { /* line 70, ../sass/_main.scss */
+@media screen and (min-width: 500px) and (max-width: 899.9px) { /* line 65, ../sass/_main.scss */
   .headline { font-size: 3em; }
-  /* line 74, ../sass/_main.scss */
+  /* line 69, ../sass/_main.scss */
   .headline-wrapper { padding: 10px; }
-  /* line 78, ../sass/_main.scss */
+  /* line 73, ../sass/_main.scss */
   .section-header { font-size: 2.5em; }
-  /* line 82, ../sass/_main.scss */
+  /* line 77, ../sass/_main.scss */
   .main-contact-link, .main-projects-link { font-size: 2em; } }
-@media screen and (min-width: 900px) { /* line 89, ../sass/_main.scss */
+@media screen and (min-width: 900px) { /* line 84, ../sass/_main.scss */
   .headline { font-size: 2.5em; }
-  /* line 93, ../sass/_main.scss */
+  /* line 88, ../sass/_main.scss */
   .section-header { font-size: 2em; } }
 /* line 1, ../sass/_projects.scss */
 #projects { min-height: 100vh; }
@@ -118,10 +115,12 @@ a:hover { color: #c8c8c8; text-decoration: none; }
   /* line 94, ../sass/_projects.scss */
   .info-text { font-size: 2em; }
   /* line 98, ../sass/_projects.scss */
-  .projects.projects-button-wrapper { padding: 10px; } }
-@media screen and (min-width: 900px) { /* line 104, ../sass/_projects.scss */
+  .projects.projects-button-wrapper { padding: 10px; }
+  /* line 102, ../sass/_projects.scss */
+  .projects.button { font-size: 1.5em; } }
+@media screen and (min-width: 900px) { /* line 108, ../sass/_projects.scss */
   .thumb-header { font-size: 1.7em; }
-  /* line 108, ../sass/_projects.scss */
+  /* line 112, ../sass/_projects.scss */
   .info-text { font-size: 1.3em; } }
 /* line 1, ../sass/_contact.scss */
 #contact { min-height: 300px; background-color: black; color: white; }
